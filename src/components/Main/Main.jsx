@@ -21,7 +21,7 @@ class Main extends React.Component {
                         <div className="row">
                         <div className="col-lg-6">
                             <ul>
-                            <li><i className="icofont-rounded-right"></i> <strong>Nascimentp:</strong> 29 Dezembro 2000</li>
+                            <li><i className="icofont-rounded-right"></i> <strong>Nascimento:</strong> 29 Dezembro 2000</li>
                             <li><i className="icofont-rounded-right"></i> <strong>Celular:</strong> (47) 9 8874-3841</li>
                             <li><i className="icofont-rounded-right"></i> <strong>Cidade:</strong> Curitiba, PR</li>
                             </ul>
@@ -296,7 +296,7 @@ class Main extends React.Component {
                         <div className="info">
                         <div className="address">
                             <i className="icofont-google-map"></i>
-                            <h4>Localizaçãp:</h4>
+                            <h4>Localização:</h4>
                             <p>Curitiba, PR</p>
                         </div>
 
@@ -343,7 +343,7 @@ class Main extends React.Component {
                         <div className="mb-3">
                             <div className="loading">Loading</div>
                             <div className="error-message"></div>
-                            <div className="sent-message">Your message has been sent. Thank you!</div>
+                            <div className="sent-message">Mensagem Enviada!</div>
                         </div>
                         <div className="text-center"><button type="submit">Enviar</button></div>
                         </form>
