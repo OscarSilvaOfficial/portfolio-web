@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './static/style.css'
+import './static/style.min.css'
 import './static/aos/aos.css'
 import './static/bootstrap/css/bootstrap.min.css'
 import './static/boxicons/css/boxicons.min.css'

@@ -12,8 +12,8 @@ class Menu extends React.Component{
                         <img src="/img/profile-img.jpg" alt="" className="img-fluid rounded-circle"></img>
                         <h1 className="text-light"><a href="index.html">Oscar da Silva</a></h1>
                         <div className="social-links mt-3 text-center">
-                        <a href="https://www.linkedin.com/in/dasilvaoscar" target="_blank" className="linkedin"><i className="bx bxl-linkedin"></i></a>
-                        <a href="https://github.com/OscarSilvaOfficial" target="_blank" className="git"><i className="bx bxl-github"></i></a>
+                        <a href="https://www.linkedin.com/in/dasilvaoscar" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+                        <a href="https://github.com/OscarSilvaOfficial" className="git"><i className="bx bxl-github"></i></a>
 
                         </div>
                     </div>
