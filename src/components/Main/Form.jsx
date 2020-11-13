@@ -21,7 +21,7 @@ class Form extends React.Component {
     
     submitHandler = e => {
         e.preventDefault()
-        axios.post('http://127.0.0.1:5000/api/send-mail', this.state)
+        axios.post('https://oscarsilvaofficial-api.herokuapp.com/api/send-mail', this.state)
             .then(respone => {
                 console.log(respone.data)
             })
