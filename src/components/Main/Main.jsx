@@ -1,4 +1,5 @@
 import React from 'react'
+import  Form  from './Form'
 
 class Main extends React.Component {
     render() {
@@ -316,38 +317,7 @@ class Main extends React.Component {
 
                     </div>
 
-                    <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                        <form method="post" className="php-email-form">
-                        <div className="form-row">
-                            <div className="form-group col-md-6">
-                            <label for="name">Nome</label>
-                            <input type="text" name="name" className="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div className="validate"></div>
-                            </div>
-                            <div className="form-group col-md-6">
-                            <label for="name">E-mail</label>
-                            <input type="email" className="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                            <div className="validate"></div>
-                            </div>
-                        </div>
-                        <div className="form-group">
-                            <label for="name">Título</label>
-                            <input type="text" className="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                            <div className="validate"></div>
-                        </div>
-                        <div className="form-group">
-                            <label for="name">Mensagem</label>
-                            <textarea className="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-                            <div className="validate"></div>
-                        </div>
-                        <div className="mb-3">
-                            <div className="loading">Loading</div>
-                            <div className="error-message"></div>
-                            <div className="sent-message">Mensagem Enviada!</div>
-                        </div>
-                        <div className="text-center"><button type="submit">Enviar</button></div>
-                        </form>
-                    </div>
+                    <Form/>
 
                     </div>
 
