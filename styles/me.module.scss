@@ -1,0 +1,17 @@
+.me {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../public/bg.jpg");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .image__me {
+    border-radius: 50%;
+    position: relative;
+  }
+  
+}
+
