@@ -1,8 +1,12 @@
 import Me from '../components/Me' 
+import Head from '../components/Head'
 import homeStyles from '../styles/home.module.scss'
 
-export default function HomrPage() {
+export default function HomePage() {
   return (
-    <Me />
+    <>
+      <Head title="Oscar da Silva" iconSrc="/" />
+      <Me />
+    </>
   )
 }
