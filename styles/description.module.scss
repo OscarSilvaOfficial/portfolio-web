@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import 'utils.scss';
+
+.my__description {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: $defaultPadding;
+
+  .sub_title {
+    font-family: "Raleway";
+    font-size: $titleFontSize;
+    color: #173b6c;
+    @include underline;
+  }
+
+  > p {
+    font-family: "Open Sans", sans-serif;
+  }
+}
