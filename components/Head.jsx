@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-function HeadPage({title, iconSrc}) {
+function HeadPage({ title, iconSrc }) {
   return (
     <div>
       <Head>

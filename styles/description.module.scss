@@ -2,20 +2,31 @@
 @import 'utils.scss';
 
 .my__description {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  padding: $defaultPadding;
+  @media (max-width: 600px) {
+    padding: $defaultPaddingMob;
+  }
+
+  .span__animation__right {
+    display: none;
+  }
 
   .sub_title {
     font-family: "Raleway";
     font-size: $titleFontSize;
     color: #173b6c;
-    @include underline;
+    @include underline(0);
+    @media (max-width: 600px) {
+      font-size: $titleFontSizeMob;
+    }
   }
 
-  > p {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: $defaultPadding;
+  background-color: lightyellow;
+
+  p {
     font-family: "Open Sans", sans-serif;
   }
 }
