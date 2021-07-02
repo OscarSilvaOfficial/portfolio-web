@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-$defaultPadding: 70px 15vw;
+$defaultPadding: 40px 15vw;
 $defaultPaddingMob: 30px 7vw;
 $titleFontSize: 3rem;
-$titleFontSizeMob: 2rem;
+$titleFontSizeMob: 1.3rem;
 
 @mixin underline($left) {
   &::after {

@@ -2,36 +2,85 @@
 @import 'utils.scss';
 
 .my__description {
-  @media (max-width: 600px) {
-    padding: 70px 7vw 30px;
-  }
-
-  .span__animation__right {
-    display: none;
-  }
-
-  .sub_title {
-    font-family: "Raleway";
-    font-size: $titleFontSize;
-    color: #173b6c;
-    @include underline(0);
-    @media (max-width: 600px) {
-      font-size: $titleFontSizeMob;
-    }
-  }
-
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   padding: $defaultPadding;
-  background-color: lightyellow;
-  
-  .code__md {
-    font-family: "Fira Code", sans-serif;
-    padding: 18px;
-    border-radius: 10px;
-    background-color: #282c34;
-    color: aliceblue;
-    box-shadow: 10px 5px 5px black;
+  background-color: darkslategray;
+
+  @media (max-width: 600px) {
+    padding: 120px 7vw 30px;
   }
+
+  .span__animation__right {
+    display: none;
+    background-color: #0e1318;
+    padding: 0px 0px 40px;
+    border: 8px solid #23313f;
+
+    .abas {
+      display: flex;
+  
+      .selected__aba {
+        background-color: #0e1318;
+        color: white;
+        font-family: 'Raleway';
+        padding: 10px 45px;
+        display: flex;
+        
+        > span {
+          margin-left: 5px;
+        }
+
+        .close_btn {
+          position: relative;
+          top: -5px;
+          left: 25px;
+          font-size: 14px;
+        }
+      }
+    
+      .unselected__aba {
+        background-color: #23313f;
+        width: 100%;
+        height: 30px;
+      }
+    }
+
+    .sub_title {
+      font-family: "Fira Code";
+      font-size: $titleFontSize;
+      color: blueviolet;
+      @media (min-width: 601px) and (max-width: 1000px) {
+        font-size: 2.2rem;
+      }
+      @media (max-width: 600px) {
+        font-size: $titleFontSizeMob;
+      }
+    }
+  
+    .code {
+      &__md {
+        font-family: "Fira Code", sans-serif;
+        padding: 18px;
+        border-radius: 10px;
+        background-color: #282c34;
+        color: aliceblue;
+        box-shadow: 10px 5px 5px black;
+      }
+      
+      &__pages {
+        padding: 20px 100px;
+        @media (min-width: 601px) and (max-width: 1000px) {
+          padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  
 }
