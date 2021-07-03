@@ -16,10 +16,10 @@ function loadSectionAnimation() {
 export default function Description() {
   useEffect(() => {
     window.addEventListener('load', () => {
-      loadSectionAnimation()
+      setTimeout(loadSectionAnimation, 1000)
     });
     window.addEventListener('scroll', () => {
-      loadSectionAnimation()
+      setTimeout(loadSectionAnimation, 1000)
     });
   });
 
@@ -28,43 +28,42 @@ export default function Description() {
       <span className={stylesDesc.span__animation__right}>
         <div className={stylesDesc.abas}>
           <div className={stylesDesc.selected__aba}>
-            <Image 
-              src="/icons/markdown.ico"
-              alt="My picture"
-              width={20}
-              height={20}
-              layout="fixed"
-              quality="100"
-              format="webp"
-              priority={true}
-            />
+            <div className={stylesDesc.icon__mda}>
+              <Image
+                src="/icons/markdown.ico"
+                alt="My picture"
+                width={20}
+                height={20}
+                layout="fixed"
+                quality="100"
+                format="webp"
+                priority={true}
+              />
+            </div>
             <span>README.md</span>
             <span className={stylesDesc.close_btn}>x</span>
           </div>
           <div className={stylesDesc.unselected__aba}></div>
         </div>
-        <aside>
-          
-        </aside>
         <div className={stylesDesc.code__pages}>
           <h2 className={`${stylesDesc.sub_title}`}> => Quem sou eu ? ☕</h2>
           <p className={stylesDesc.code__md}>
-          > Sou programador, e agradeço a Deus todos os dias por
+            Sou programador, e agradeço a Deus todos os dias por
             saber a minha profissão desde cedo, e ainda mais, por me dar a
             oportunidade de trabalhar no que amo e nunca perder a vontade de estudar.
           </p>
           <p className={stylesDesc.code__md}>
-          > Eu acredito que nunca sei o suficiente sobre esse mundo, e por esse motivo
+            Eu acredito que nunca sei o suficiente sobre esse mundo, e por esse motivo
             todos os dias me dedico ao máximo pra aprender, ensinar e evoluir, a final
             depois destruir e reconstruir novamentem, isso várias e várias vezes.
             o que me fascina é isso, construir, estudar e perceber que fiz tudo errado
           </p>
           <p className={stylesDesc.code__md}>
-          > Na verdade, acredito que a programação é uma arte, e mostra muito de cada um,
+            Na verdade, acredito que a programação é uma arte, e mostra muito de cada um,
             desde a identação até uma abstração complexa pra fazer uma simples query SQL.
           </p>
-          <p className={stylesDesc.code__md}> 
-          > Se você ler o meu código, muito provavelmente, vai entender muito de quem eu sou,
+          <p className={stylesDesc.code__md}>
+            Se você ler o meu código, muito provavelmente, vai entender muito de quem eu sou,
             e se ver o meu GitHub, saberá toda minha história como desenvolvedor profissional.
             Isso é o que eu amo, e espero que até os meus ultimos dias, eu possa continuar
             expressando a minha arte :).

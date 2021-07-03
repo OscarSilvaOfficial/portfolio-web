@@ -7,7 +7,9 @@
   flex-direction: column;
   padding: $defaultPadding;
   background-color: darkslategray;
-
+  background-image: url('../public/images/bg-desc.jpg');
+  border-top: 3px solid blueviolet;
+  
   @media (max-width: 600px) {
     padding: 120px 7vw 30px;
   }
@@ -17,6 +19,8 @@
     background-color: #0e1318;
     padding: 0px 0px 40px;
     border: 8px solid #23313f;
+    border-radius: 5px;
+
 
     .abas {
       display: flex;
@@ -30,6 +34,11 @@
         
         > span {
           margin-left: 5px;
+        }
+
+        .icon__mda {
+          position: relative;
+          left: -20px;
         }
 
         .close_btn {
