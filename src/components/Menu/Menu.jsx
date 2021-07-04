@@ -4,7 +4,7 @@ class Menu extends React.Component{
     render() {
         return(
             <>
-            <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+            <button type="button" className="mobile-nav-toggle d-xl-none"><i className="icofont-navigation-menu"></i></button>
 
             <header id="header">
                 <div className="d-flex flex-column">
