@@ -2,24 +2,22 @@ import stylesDesc from '../styles/description.module.scss'
 import Image from 'next/image'
 import { useEffect } from "react";
 
-function loadSectionAnimation() {
-  const element = document.querySelector('.' + stylesDesc.my__description);
-  const position = element.getBoundingClientRect();
-
-  if (position.top >= 0 && position.bottom <= window.innerHeight) {
+function checkVisible(elm) {
+  const rect = elm.getBoundingClientRect();
+  const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+  if (!(rect.bottom < 0 || rect.top - viewHeight >= 0)) {
     document.querySelector("." + stylesDesc.span__animation__right).style.display = 'block'
     document.querySelector("." + stylesDesc.span__animation__right).classList
       .add('animate__animated', 'animate__backInRight')
-  }
+  } 
 }
 
 export default function Description() {
   useEffect(() => {
-    window.addEventListener('load', () => {
-      setTimeout(loadSectionAnimation, 1000)
-    });
     window.addEventListener('scroll', () => {
-      setTimeout(loadSectionAnimation, 1000)
+      setTimeout(() => {
+        checkVisible(document.querySelector('.' + stylesDesc.my__description))
+      } , 1000)
     });
   });
 

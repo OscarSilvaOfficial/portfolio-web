@@ -13,8 +13,6 @@
   justify-content: center;
 
   @media (max-width: 600px) {
-  height: auto;
-    
     > div {
       width: 150px;
       position: relative;
@@ -49,7 +47,7 @@
 
     @media (max-width: 600px) {
       position: relative;
-      top: -160px;
+      top: -87px;
 
       .name {
         color: white;

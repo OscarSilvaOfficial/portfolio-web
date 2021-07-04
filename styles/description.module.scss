@@ -9,9 +9,11 @@
   background-color: darkslategray;
   background-image: url('../public/images/bg-desc.jpg');
   border-top: 3px solid blueviolet;
+  min-height: 841px;
   
   @media (max-width: 600px) {
-    padding: 120px 7vw 30px;
+    padding: 50px 7vw 0px;
+    min-height: 1341px;
   }
 
   .span__animation__right {
