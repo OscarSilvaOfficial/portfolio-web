@@ -33,7 +33,7 @@ class Main extends React.Component {
                       </li>
                       <li>
                         <i className="icofont-rounded-right"></i>{" "}
-                        <strong>Celular:</strong> (47) 9 8874-3841
+                        <strong>Celular:</strong> (41) 98874-3841
                       </li>
                       <li>
                         <i className="icofont-rounded-right"></i>{" "}
@@ -47,11 +47,29 @@ class Main extends React.Component {
                   </div>
                 </div>
                 <p>
-                  Sou programador FullStack, e agradeço a Deus todos os dias por
-                  saber a minha profissão desde cedo, e ainda mais, por me dar a
+                  Sou programador, e agradeço a Deus todos os dias por saber a
+                  minha profissão desde cedo, e ainda mais, por me dar a
                   oportunidade de trabalhar no que amo e nunca perder a vontade
-                  de estudar, a cada dia aprendo algo e sempre quero mais e
-                  mais.
+                  de estudar.
+                </p>
+                <p>
+                  Eu acredito que nunca sei o suficiente sobre esse mundo, e por
+                  esse motivo todos os dias me dedico ao máximo pra aprender,
+                  ensinar e evoluir, a final depois destruir e reconstruir
+                  novamentem, isso várias e várias vezes. o que me fascina é
+                  isso, construir, estudar e perceber que fiz tudo errado
+                </p>
+                <p>
+                  Na verdade, acredito que a programação é uma arte, e mostra
+                  muito de cada um, desde a identação até uma abstração complexa
+                  pra fazer uma simples query SQL.
+                </p>
+                <p>
+                  Se você ler o meu código, muito provavelmente, vai entender
+                  muito de quem eu sou, e se ver o meu GitHub, saberá toda minha
+                  história como desenvolvedor profissional. Isso é o que eu amo,
+                  e espero que até os meus ultimos dias, eu possa continuar
+                  expressando a minha arte :).
                 </p>
               </div>
             </div>
@@ -70,127 +88,65 @@ class Main extends React.Component {
 
             <div className="row skills-content">
               <div className="col-lg-6" data-aos="fade-up">
+                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/html.png"} alt="" />
+                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/ts.png"} alt="" />
+                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/css.png"} alt="" />
+                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/sass.png"} alt="" />
+                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/js.png"} alt="" />
+                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/vue.png"} alt="" />
+                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/react.png"} alt="" />
+                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/next.png"} alt="" />
+                <img width="40" src={process.env.PUBLIC_URL + "/img/icons/nuxt.png"} alt="" />
+                {/* <div className="progress">
+                  <span className="skill">
+                    HTML 
+                  </span>
+                </div>
                 <div className="progress">
                   <span className="skill">
-                    HTML <i className="val">100%</i>
+                    CSS
                   </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
                 </div>
-
                 <div className="progress">
                   <span className="skill">
-                    CSS <i className="val">90%</i>
+                    SASS
                   </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="90"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
                 </div>
-
                 <div className="progress">
                   <span className="skill">
-                    JavaScript <i className="val">75%</i>
+                    JavaScript
                   </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="75"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
                 </div>
-
                 <div className="progress">
                   <span className="skill">
-                    VueJS <i className="val">55%</i>
+                    Typescript
                   </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="75"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
                 </div>
-              </div>
-
-              <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                 <div className="progress">
                   <span className="skill">
-                    Python <i className="val">95%</i>
+                    VueJS
                   </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="80"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
                 </div>
-
                 <div className="progress">
                   <span className="skill">
-                    React <i className="val">70%</i>
+                    Python
                   </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="90"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
                 </div>
-
                 <div className="progress">
                   <span className="skill">
-                    Django <i className="val">90%</i>
+                    React
                   </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="55"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
                 </div>
-
                 <div className="progress">
                   <span className="skill">
-                    Flask <i className="val">85%</i>
+                    Django
                   </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="55"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
                 </div>
+                <div className="progress">
+                  <span className="skill">
+                    Flask
+                  </span>
+                </div> */}
               </div>
             </div>
           </div>
