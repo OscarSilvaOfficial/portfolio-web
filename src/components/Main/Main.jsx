@@ -1,5 +1,4 @@
 import React from "react";
-import Form from "./Form";
 
 class Main extends React.Component {
   render() {
@@ -87,7 +86,10 @@ class Main extends React.Component {
             </div>
 
             <div className="row skills-content">
-              <div className="col-lg-6" data-aos="fade-up">
+              <div className="col-lg-6 skills__logo" data-aos="fade-up">
+                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/python.png"} alt="" />
+                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/node.png"} alt="" />
+                <img width="45" src={process.env.PUBLIC_URL + "/img/icons/kotlin.png"} alt="" />
                 <img width="50" src={process.env.PUBLIC_URL + "/img/icons/html.png"} alt="" />
                 <img width="50" src={process.env.PUBLIC_URL + "/img/icons/ts.png"} alt="" />
                 <img width="50" src={process.env.PUBLIC_URL + "/img/icons/css.png"} alt="" />
@@ -97,56 +99,11 @@ class Main extends React.Component {
                 <img width="50" src={process.env.PUBLIC_URL + "/img/icons/react.png"} alt="" />
                 <img width="50" src={process.env.PUBLIC_URL + "/img/icons/next.png"} alt="" />
                 <img width="40" src={process.env.PUBLIC_URL + "/img/icons/nuxt.png"} alt="" />
-                {/* <div className="progress">
-                  <span className="skill">
-                    HTML 
-                  </span>
-                </div>
-                <div className="progress">
-                  <span className="skill">
-                    CSS
-                  </span>
-                </div>
-                <div className="progress">
-                  <span className="skill">
-                    SASS
-                  </span>
-                </div>
-                <div className="progress">
-                  <span className="skill">
-                    JavaScript
-                  </span>
-                </div>
-                <div className="progress">
-                  <span className="skill">
-                    Typescript
-                  </span>
-                </div>
-                <div className="progress">
-                  <span className="skill">
-                    VueJS
-                  </span>
-                </div>
-                <div className="progress">
-                  <span className="skill">
-                    Python
-                  </span>
-                </div>
-                <div className="progress">
-                  <span className="skill">
-                    React
-                  </span>
-                </div>
-                <div className="progress">
-                  <span className="skill">
-                    Django
-                  </span>
-                </div>
-                <div className="progress">
-                  <span className="skill">
-                    Flask
-                  </span>
-                </div> */}
+                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/kafka.png"} alt="" />
+                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/rabbitmq.png"} alt="" />
+                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/redis.png"} alt="" />
+                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/django.png"} alt="" />
+                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/flask.png"} alt="" />
               </div>
             </div>
           </div>
@@ -161,6 +118,14 @@ class Main extends React.Component {
             <div className="row">
               <div className="col-lg-6" data-aos="fade-up">
                 <h3 className="resume-title">Faculdade</h3>
+                <div className="resume-item">
+                  <h4>Fullstack Development Design, Engineering & Deployment</h4>
+                  <h5>2020 - 2021</h5>
+                  <p>
+                    <em>FIAP</em>
+                  </p>
+                </div>
+
                 <div className="resume-item">
                   <h4>Análise &amp; Desenvolvimento de Software</h4>
                   <h5>2017 - 2020</h5>
@@ -206,6 +171,10 @@ class Main extends React.Component {
                   </p>
                   <p>
                     <i className="icofont-rounded-right"></i>
+                    <em>Django - Udemy</em>
+                  </p>
+                  <p>
+                    <i className="icofont-rounded-right"></i>
                     <em>Segurança da Informação - Fundação Bradesco</em>
                   </p>
                   <p>
@@ -221,14 +190,14 @@ class Main extends React.Component {
               <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                 <h3 className="resume-title">Experiência - Profissional</h3>
                 <div className="resume-item">
-                  <h4>Desenvolvedor FullStack - Júnior</h4>
+                  <h4>FullStack Developer & QA</h4>
                   <h5>QuiteJá | 2020 - Atual</h5>
                   <p>
                     <em>Curitiba, PR</em>
                   </p>
                 </div>
                 <div className="resume-item">
-                  <h4>Desenvolvedor FullStack - Júnior</h4>
+                  <h4>FullStack Developer</h4>
                   <h5>RHBrasil | 2020</h5>
                   <p>
                     <em>Joinville, SC</em>
@@ -242,7 +211,7 @@ class Main extends React.Component {
                   </ul>
                 </div>
                 <div className="resume-item">
-                  <h4>Desenvolvedor FullStack - Autônomo </h4>
+                  <h4>FullStack Developer</h4>
                   <h5>Remoto-Club | 2020</h5>
                   <p>
                     <em>Itapoá, SC</em>
@@ -303,8 +272,6 @@ class Main extends React.Component {
                   <li data-filter="*" className="filter-active">
                     All
                   </li>
-                  <li data-filter=".filter-app">App</li>
-                  <li data-filter=".filter-card">Card</li>
                 </ul>
               </div>
             </div>
@@ -384,7 +351,7 @@ class Main extends React.Component {
             </div>
 
             <div className="row" data-aos="fade-in">
-              <div className="col-lg-5 d-flex align-items-stretch">
+              <div id="contact__form" className="col-lg-5 d-flex align-items-stretch">
                 <div className="info">
                   <div className="address">
                     <i className="icofont-google-map"></i>
@@ -401,12 +368,10 @@ class Main extends React.Component {
                   <div className="phone">
                     <i className="icofont-phone"></i>
                     <h4>Ligue:</h4>
-                    <p>(47) 9 8874-3841</p>
+                    <p>(41) 98874-3841</p>
                   </div>
                 </div>
               </div>
-
-              <Form />
             </div>
           </div>
         </section>
