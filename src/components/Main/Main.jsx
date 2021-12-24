@@ -190,6 +190,13 @@ class Main extends React.Component {
               <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                 <h3 className="resume-title">Experiência - Profissional</h3>
                 <div className="resume-item">
+                  <h4>Senior Full Stack Developer</h4>
+                  <h5>South System | 2021 - Atual</h5>
+                  <p>
+                    <em>Remoto</em>
+                  </p>
+                </div>
+                <div className="resume-item">
                   <h4>FullStack Developer & QA</h4>
                   <h5>QuiteJá | 2020 - Atual</h5>
                   <p>
