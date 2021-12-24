@@ -267,7 +267,7 @@ class Main extends React.Component {
           </div>
         </section>
 
-        <section id="portfolio" className="portfolio section-bg">
+        /*<section id="portfolio" className="portfolio section-bg">
           <div className="container">
             <div className="section-title">
               <h2>Portfolio</h2>
@@ -349,7 +349,7 @@ class Main extends React.Component {
               </div>
             </div>
           </div>
-        </section>
+        </section>*/
 
         <section id="contact" className="contact">
           <div className="container">
