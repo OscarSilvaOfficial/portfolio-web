@@ -202,6 +202,14 @@ class Main extends React.Component {
                   <p>
                     <em>Curitiba, PR</em>
                   </p>
+                  <ul>
+                    <li>
+                      Desenvolvimento do Front-end autilizando VueJS e Angular
+                    </li>
+                    <li>
+                      Back-end em Python, com Flask, Rabbit e Kafka
+                    </li>
+                  </ul>
                 </div>
                 <div className="resume-item">
                   <h4>FullStack Developer</h4>
