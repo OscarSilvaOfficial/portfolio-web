@@ -63,9 +63,9 @@ class Main extends React.Component {
                 </p>
                 <p>
                   Se você ler o meu código, muito provavelmente, vai entender
-                  muito de quem eu sou. Isso é o que eu amo,
-                  e espero que até os meus ultimos dias, eu possa continuar
-                  expressando a minha arte :).
+                  muito de quem eu sou. Isso é o que eu amo, e espero que até os
+                  meus ultimos dias, eu possa continuar expressando a minha arte
+                  :).
                 </p>
               </div>
             </div>
@@ -84,23 +84,91 @@ class Main extends React.Component {
 
             <div className="row skills-content">
               <div className="col-lg-6 skills__logo" data-aos="fade-up">
-                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/python.png"} alt="" />
-                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/node.png"} alt="" />
-                <img width="45" src={process.env.PUBLIC_URL + "/img/icons/kotlin.png"} alt="" />
-                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/html.png"} alt="" />
-                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/ts.png"} alt="" />
-                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/css.png"} alt="" />
-                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/sass.png"} alt="" />
-                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/js.png"} alt="" />
-                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/vue.png"} alt="" />
-                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/react.png"} alt="" />
-                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/next.png"} alt="" />
-                <img width="40" src={process.env.PUBLIC_URL + "/img/icons/nuxt.png"} alt="" />
-                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/kafka.png"} alt="" />
-                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/rabbitmq.png"} alt="" />
-                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/redis.png"} alt="" />
-                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/django.png"} alt="" />
-                <img width="50" src={process.env.PUBLIC_URL + "/img/icons/flask.png"} alt="" />
+                <img
+                  width="50"
+                  src={process.env.PUBLIC_URL + "/img/icons/python.png"}
+                  alt=""
+                />
+                <img
+                  width="50"
+                  src={process.env.PUBLIC_URL + "/img/icons/node.png"}
+                  alt=""
+                />
+                <img
+                  width="45"
+                  src={process.env.PUBLIC_URL + "/img/icons/kotlin.png"}
+                  alt=""
+                />
+                <img
+                  width="50"
+                  src={process.env.PUBLIC_URL + "/img/icons/html.png"}
+                  alt=""
+                />
+                <img
+                  width="50"
+                  src={process.env.PUBLIC_URL + "/img/icons/ts.png"}
+                  alt=""
+                />
+                <img
+                  width="50"
+                  src={process.env.PUBLIC_URL + "/img/icons/css.png"}
+                  alt=""
+                />
+                <img
+                  width="50"
+                  src={process.env.PUBLIC_URL + "/img/icons/sass.png"}
+                  alt=""
+                />
+                <img
+                  width="50"
+                  src={process.env.PUBLIC_URL + "/img/icons/js.png"}
+                  alt=""
+                />
+                <img
+                  width="50"
+                  src={process.env.PUBLIC_URL + "/img/icons/vue.png"}
+                  alt=""
+                />
+                <img
+                  width="50"
+                  src={process.env.PUBLIC_URL + "/img/icons/react.png"}
+                  alt=""
+                />
+                <img
+                  width="50"
+                  src={process.env.PUBLIC_URL + "/img/icons/next.png"}
+                  alt=""
+                />
+                <img
+                  width="40"
+                  src={process.env.PUBLIC_URL + "/img/icons/nuxt.png"}
+                  alt=""
+                />
+                <img
+                  width="50"
+                  src={process.env.PUBLIC_URL + "/img/icons/kafka.png"}
+                  alt=""
+                />
+                <img
+                  width="50"
+                  src={process.env.PUBLIC_URL + "/img/icons/rabbitmq.png"}
+                  alt=""
+                />
+                <img
+                  width="50"
+                  src={process.env.PUBLIC_URL + "/img/icons/redis.png"}
+                  alt=""
+                />
+                <img
+                  width="50"
+                  src={process.env.PUBLIC_URL + "/img/icons/django.png"}
+                  alt=""
+                />
+                <img
+                  width="50"
+                  src={process.env.PUBLIC_URL + "/img/icons/flask.png"}
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -116,7 +184,9 @@ class Main extends React.Component {
               <div className="col-lg-6" data-aos="fade-up">
                 <h3 className="resume-title">Faculdade</h3>
                 <div className="resume-item">
-                  <h4>Fullstack Development Design, Engineering & Deployment</h4>
+                  <h4>
+                    Fullstack Development Design, Engineering & Deployment
+                  </h4>
                   <h5>2020 - 2021</h5>
                   <p>
                     <em>FIAP</em>
@@ -192,6 +262,12 @@ class Main extends React.Component {
                   <p>
                     <em>Remoto</em>
                   </p>
+                  <ul>
+                    <li>
+                      Hoje sou responsável por implementar novas funcionalidades
+                      e concertar bugs no core bancário da Atar
+                    </li>
+                  </ul>
                 </div>
                 <div className="resume-item">
                   <h4>FullStack Developer & QA</h4>
@@ -203,9 +279,7 @@ class Main extends React.Component {
                     <li>
                       Desenvolvimento do Front-end autilizando VueJS e Angular
                     </li>
-                    <li>
-                      Back-end em Python, com Flask, Rabbit e Kafka
-                    </li>
+                    <li>Back-end em Python, com Flask, Rabbit e Kafka</li>
                   </ul>
                 </div>
                 <div className="resume-item">
@@ -279,7 +353,10 @@ class Main extends React.Component {
             </div>
 
             <div className="row" data-aos="fade-in">
-              <div id="contact__form" className="col-lg-5 d-flex align-items-stretch">
+              <div
+                id="contact__form"
+                className="col-lg-5 d-flex align-items-stretch"
+              >
                 <div className="info">
                   <div className="address">
                     <i className="icofont-google-map"></i>
