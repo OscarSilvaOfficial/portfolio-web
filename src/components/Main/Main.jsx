@@ -54,9 +54,7 @@ class Main extends React.Component {
                 <p>
                   Eu acredito que nunca sei o suficiente sobre esse mundo, e por
                   esse motivo todos os dias me dedico ao máximo pra aprender,
-                  ensinar e evoluir, a final depois destruir e reconstruir
-                  novamentem, isso várias e várias vezes. o que me fascina é
-                  isso, construir, estudar e perceber que fiz tudo errado
+                  ensinar e evoluir.
                 </p>
                 <p>
                   Na verdade, acredito que a programação é uma arte, e mostra
@@ -65,8 +63,7 @@ class Main extends React.Component {
                 </p>
                 <p>
                   Se você ler o meu código, muito provavelmente, vai entender
-                  muito de quem eu sou, e se ver o meu GitHub, saberá toda minha
-                  história como desenvolvedor profissional. Isso é o que eu amo,
+                  muito de quem eu sou. Isso é o que eu amo,
                   e espero que até os meus ultimos dias, eu possa continuar
                   expressando a minha arte :).
                 </p>
