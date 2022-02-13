@@ -1,20 +1,31 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - portfolio-web',
     title: 'portfolio-web',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'pt-BR',
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: '/css/base.css' },
+      { rel: 'stylesheet', href: '/css/main.css' },
+      { rel: 'stylesheet', href: '/css/vendor.css' },
+    ],
+    script: [
+      { src: '/js/modernizr.js' },
+      { src: '/js/pace.min.js' },
+      { src: '/js/jquery-2.1.3.min.js', body: true },
+      { src: '/js/plugins.js', body: true },
+      { src: '/js/main.js', body: true },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -31,7 +42,7 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
+    // '@nuxtjs/vuetify',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
