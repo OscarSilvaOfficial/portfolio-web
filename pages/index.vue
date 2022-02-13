@@ -16,10 +16,10 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
   name: 'IndexPage',
-  data:() => ({
+  data: () => ({
     linkedinProfile: {},
   }),
   async created() {

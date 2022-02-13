@@ -88,7 +88,7 @@
     </div>
   </section>
 </template>
-<script lang='ts'>
+<script>
 export default {
   props: {
     enabled: {
@@ -109,10 +109,10 @@ export default {
     },
   },
   methods: {
-    getBeginDate(date: any) {
+    getBeginDate(date) {
       return `${date.starts_at.day <= 9 ? '0'+date.starts_at.day : date.starts_at.day }/${date.starts_at.month <= 9 ? '0'+date.starts_at.month : date.starts_at.month}/${date.starts_at.year}`; 
     },
-    getEndDate(date: any) {
+    getEndDate(date) {
       return `${date.ends_at.day <= 9 ? '0'+date.ends_at.day : date.ends_at.day }/${date.ends_at.month <= 9 ? '0'+date.ends_at.month : date.ends_at.month}/${date.ends_at.year}`; 
     },
   },
