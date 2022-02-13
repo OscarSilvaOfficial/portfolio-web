@@ -9,7 +9,7 @@
           <h1>Oscar da Silva.</h1>
 
           <p class="intro-position">
-            <span>{{ headline }}</span>
+            <span>Senior FullStack Developer</span>
           </p>
         </div>
       </div>

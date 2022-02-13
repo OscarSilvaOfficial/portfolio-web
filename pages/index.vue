@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     async getLinkedinProfile() {
-      return await this.$axios.$get('http://localhost:8000')
+      return await this.$axios.$get(process.env.API_URL)
     },
   },
 }
