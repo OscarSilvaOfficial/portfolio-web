@@ -60,13 +60,32 @@
               <p>{{ education.description }}</p>
             </div>
           </div>
-          <!-- /timeline-block -->
         </div>
-        <!-- /timeline-wrap -->
       </div>
-      <!-- /col-twelve -->
     </div>
-    <!-- /resume-timeline -->
+
+    <div class="row resume-timeline">
+      <div class="col-twelve resume-header">
+        <h2>Certificados</h2>
+      </div>
+      <div class="col-twelve">
+        <div class="timeline-wrap">
+          <div v-for="certification in certifications" :key="certification.id" class="timeline-block">
+            <div class="timeline-ico">
+              <i class="fa fa-briefcase"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>{{ certification.authority }} </h3>
+            </div>
+
+            <div class="timeline-content">
+              <h4>{{ certification.name }}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 <script lang='ts'>
@@ -81,6 +100,10 @@ export default {
       default: () => [],
     },
     educations: {
+      type: Array,
+      default: () => [],
+    },
+    certifications: {
       type: Array,
       default: () => [],
     },

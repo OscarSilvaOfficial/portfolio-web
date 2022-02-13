@@ -3,7 +3,10 @@
     <BaseHeader :enabled="false" />
     <Intro :headline="linkedinProfile.headline" />
     <About :summary="linkedinProfile.summary" />
-    <Resume :jobs="linkedinProfile.experiences" :educations="linkedinProfile.educations" />
+    <Resume 
+      :jobs="linkedinProfile.experiences" 
+      :educations="linkedinProfile.educations" 
+      :certifications="linkedinProfile.certifications" />
     <Portfolio :enabled="false" />
     <Cta />
     <Services />
