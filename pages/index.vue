@@ -3,14 +3,15 @@
     <BaseHeader :enabled="false" />
     <Intro :headline="linkedinProfile.headline" />
     <About :summary="linkedinProfile.summary" />
-    <Resume 
-      :jobs="linkedinProfile.experiences" 
-      :educations="linkedinProfile.educations" 
-      :certifications="linkedinProfile.certifications" />
+    <Resume
+      :jobs="linkedinProfile.experiences"
+      :educations="linkedinProfile.educations"
+      :certifications="linkedinProfile.certifications"
+    />
     <Portfolio :enabled="false" />
-    <Cta />
-    <Services />
-    <Contact />
+    <Cta :enabled="false" />
+    <Services :enabled="false" />
+    <Contact :enable-contact-form='false' />
     <BaseFooter />
     <BasePreloader />
   </div>
@@ -22,9 +23,9 @@ export default {
   data: () => ({
     linkedinProfile: {},
   }),
-  async created() {
-    this.linkedinProfile = { ...await this.getLinkedinProfile() }
-    console.log(this.linkedinProfile);
+  async mounted() {
+    const profile = await this.getLinkedinProfile()
+    this.linkedinProfile = profile
   },
   methods: {
     async getLinkedinProfile() {
