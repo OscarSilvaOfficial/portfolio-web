@@ -1,5 +1,5 @@
 <template>
-  <section id="cta" class="grey-section">
+  <section id="cta" class="grey-section" v-show="enabled">
     <div class="row cta-content">
       <div class="col-twelve section-ads">
         <h2 class="h01">
@@ -29,3 +29,13 @@
     <!-- /cta-content -->
   </section>
 </template>
+<script>
+export default {
+  props: {
+    enabled: {
+      type: Boolean,
+      default: true
+    }
+  }
+}
+</script>

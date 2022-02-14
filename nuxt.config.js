@@ -2,8 +2,8 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   head: {
-    titleTemplate: '%s - portfolio-web',
-    title: 'portfolio-web',
+    titleTemplate: 'Portifólio - Oscar da Silva',
+    title: 'Portifólio - Oscar da Silva',
     htmlAttrs: {
       lang: 'pt-BR',
     },
@@ -14,7 +14,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/icon.png' },
       { rel: 'stylesheet', href: '/css/base.css' },
       { rel: 'stylesheet', href: '/css/main.css' },
       { rel: 'stylesheet', href: '/css/vendor.css' },

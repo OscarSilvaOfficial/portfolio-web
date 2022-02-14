@@ -72,7 +72,8 @@
         <div class="timeline-wrap">
           <div v-for="certification in certifications" :key="certification.id" class="timeline-block">
             <div class="timeline-ico">
-              <i class="fa fa-briefcase"></i>
+              <img v-if="getIcon(certification.authority)" :src="getIcon(certification.authority)" class="logo-radius">
+              <i v-else class="fa fa fa-graduation-cap"></i>
             </div>
 
             <div class="timeline-header">
@@ -81,6 +82,10 @@
 
             <div class="timeline-content">
               <h4>{{ certification.name }}</h4>
+              <p v-show="certification.license_number">
+                <span>Número da licença:</span> 
+                <a :href="certification.url" class="cursor-pointer" target="_blank">{{  certification.license_number }}</a>
+              </p>
             </div>
           </div>
         </div>
@@ -115,11 +120,26 @@ export default {
     getEndDate(date) {
       return `${date.ends_at.day <= 9 ? '0'+date.ends_at.day : date.ends_at.day }/${date.ends_at.month <= 9 ? '0'+date.ends_at.month : date.ends_at.month}/${date.ends_at.year}`; 
     },
+    getIcon(authority) {
+      authority = authority.toLowerCase();
+      if (authority.includes('udemy')) {
+        return require('@/assets/icons/udemy.png');
+      }
+      if (authority.includes('alura')) {
+        return require('@/assets/icons/alura.png');
+      }
+      if (authority.includes('bradesco')) {
+        return require('@/assets/icons/bradesco.jpeg');
+      }
+    }
   },
 }
 </script>
 <style lang="scss" scoped>
 .logo-radius {
   border-radius: 20%;
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 </style>
