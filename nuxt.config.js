@@ -1,31 +1,89 @@
 import colors from 'vuetify/es5/util/colors'
 
+const image = 'https://images.wallpapersden.com/image/download/purple-sunrise-4k-vaporwave_bGplZmiUmZqaraWkpJRmbmdlrWZlbWU.jpg'
+const description = "Oscar da Silva | Portifólio de desenvolvimento de software"
+const title = 'Portifólio - Oscar da Silva'
+
 export default {
   head: {
     titleTemplate: 'Portifólio - Oscar da Silva',
-    title: 'Portifólio - Oscar da Silva',
+    title: title,
     htmlAttrs: {
       lang: 'pt-BR',
     },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' },
-      { hid: "og:image", property: "og:image", content: "https://images.wallpapersden.com/image/download/purple-sunrise-4k-vaporwave_bGplZmiUmZqaraWkpJRmbmdlrWZlbWU.jpg" }
+    meta: [{
+        charset: 'utf-8'
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1, maximum-scale=1'
+      },
+      {
+        name: 'format-detection',
+        content: 'telephone=no'
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: title
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: description
+      },
+      {
+        hid: 'image',
+        property: 'image',
+        content: image
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: description,
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: image
+      }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/icon.png' },
-      { rel: 'stylesheet', href: '/css/base.css' },
-      { rel: 'stylesheet', href: '/css/main.css' },
-      { rel: 'stylesheet', href: '/css/vendor.css' },
+    link: [{
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/icon.png'
+      },
+      {
+        rel: 'stylesheet',
+        href: '/css/base.css'
+      },
+      {
+        rel: 'stylesheet',
+        href: '/css/main.css'
+      },
+      {
+        rel: 'stylesheet',
+        href: '/css/vendor.css'
+      },
     ],
-    script: [
-      { src: '/js/modernizr.js' },
-      { src: '/js/pace.min.js' },
-      { src: '/js/jquery-2.1.3.min.js', body: true },
-      { src: '/js/plugins.js', body: true },
-      { src: '/js/main.js', body: true },
+    script: [{
+        src: '/js/modernizr.js'
+      },
+      {
+        src: '/js/pace.min.js'
+      },
+      {
+        src: '/js/jquery-2.1.3.min.js',
+        body: true
+      },
+      {
+        src: '/js/plugins.js',
+        body: true
+      },
+      {
+        src: '/js/main.js',
+        body: true
+      },
     ],
   },
 
