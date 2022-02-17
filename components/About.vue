@@ -106,13 +106,13 @@
       </div>
     </div>
 
-    <div class="row button-section">
+    <!-- <div class="row button-section">
       <div class="col-twelve">
         <a href="#" title="Download CV" class="button button-primary"
           >Download CV</a
         >
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
 <script>
