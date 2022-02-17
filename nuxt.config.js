@@ -12,6 +12,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
+      { property: "og:image", content: "/images/intro-bg.jpg" }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icon.png' },
