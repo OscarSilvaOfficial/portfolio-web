@@ -6,7 +6,7 @@ const title = 'Portifólio - Oscar da Silva'
 
 export default {
   head: {
-    titleTemplate: 'Portifólio - Oscar da Silva',
+    titleTemplate: title,
     title: title,
     htmlAttrs: {
       lang: 'pt-BR',
