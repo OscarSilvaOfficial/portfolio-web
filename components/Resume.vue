@@ -24,7 +24,7 @@
 
             <div class="timeline-header">
               <h3>{{ job.title }}</h3>
-              <p>{{ getBeginDate(job) }}</p>
+              <p>{{ getFormatedDate(job.starts_at) }}</p>
             </div>
 
             <div class="timeline-content">
@@ -52,7 +52,7 @@
 
             <div class="timeline-header">
               <h3>{{ education.school }} </h3>
-              <p>{{ getBeginDate(education) }} - {{ getEndDate(education) }}</p>
+              <p>{{ getFormatedDate(education.starts_at) }} - {{ getFormatedDate(education.ends_at) }}</p>
             </div>
 
             <div class="timeline-content">
@@ -114,23 +114,18 @@ export default {
     },
   },
   methods: {
-    getBeginDate(date) {
-      return `${date.starts_at.day <= 9 ? '0'+date.starts_at.day : date.starts_at.day }/${date.starts_at.month <= 9 ? '0'+date.starts_at.month : date.starts_at.month}/${date.starts_at.year}`; 
-    },
-    getEndDate(date) {
-      return `${date.ends_at.day <= 9 ? '0'+date.ends_at.day : date.ends_at.day }/${date.ends_at.month <= 9 ? '0'+date.ends_at.month : date.ends_at.month}/${date.ends_at.year}`; 
-    },
-    getIcon(authority) {
+    getFormatedDate: (date) => `
+      ${date.day <= 9 ? '0' + date.day : date.day }/${date.month <= 9 ? '0' + date.month : date.month}/${date.year}
+    `,
+    getIcon: (authority) => {
+      let icon = require('@/assets/icons/default.jpg')
       authority = authority.toLowerCase();
-      if (authority.includes('udemy')) {
-        return require('@/assets/icons/udemy.png');
-      }
-      if (authority.includes('alura')) {
-        return require('@/assets/icons/alura.png');
-      }
-      if (authority.includes('bradesco')) {
-        return require('@/assets/icons/bradesco.jpeg');
-      }
+
+      if (authority.includes('udemy')) icon = require('@/assets/icons/udemy.png')
+      if (authority.includes('alura')) icon = require('@/assets/icons/alura.png')
+      if (authority.includes('bradesco')) icon = require('@/assets/icons/bradesco.jpeg')
+
+      return icon
     }
   },
 }
