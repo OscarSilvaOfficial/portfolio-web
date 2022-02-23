@@ -116,10 +116,7 @@ export default {
     baseURL: '/',
     retry: { 
       retries: 100,
-      retryDelay: (retryCount) => {
-        console.debug(`retry attempt: ${retryCount}`);
-        return retryCount * 1000; // time interval between retries
-      },
+      retryDelay: () => 1000,
     }
     
   },
