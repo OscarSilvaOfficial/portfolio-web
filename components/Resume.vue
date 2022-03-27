@@ -124,6 +124,7 @@ export default {
       if (authority.includes('udemy')) icon = require('@/assets/icons/udemy.png')
       if (authority.includes('alura')) icon = require('@/assets/icons/alura.png')
       if (authority.includes('bradesco')) icon = require('@/assets/icons/bradesco.jpeg')
+      if (authority.includes('digital')) icon = require('@/assets/icons/dio.jpeg')
 
       return icon
     }
