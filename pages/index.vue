@@ -25,11 +25,12 @@ export default {
   }),
   async mounted() {
     const profile = await this.getLinkedinProfile()
+    console.log(profile)
     this.linkedinProfile = profile
   },
   methods: {
     async getLinkedinProfile() {
-      return await this.$axios.$get(process.env.API_URL)
+      return await this.$axios.$get(process.env.apiUrl)
     },
   },
 }

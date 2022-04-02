@@ -7,7 +7,7 @@ const title = 'Portifólio - Oscar da Silva'
 export default {
   head: {
     titleTemplate: title,
-    title: title,
+    title,
     htmlAttrs: {
       lang: 'pt-BR',
     },
@@ -141,7 +141,7 @@ export default {
   },
 
   env: {
-    apiUrl: process.env.API_URL,
+    apiUrl: process.env.API_URL || 'https://61xvoezyld.execute-api.us-east-1.amazonaws.com',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
