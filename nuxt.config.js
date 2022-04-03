@@ -141,7 +141,8 @@ export default {
   },
 
   env: {
-    apiUrl: process.env.API_URL || 'https://61xvoezyld.execute-api.us-east-1.amazonaws.com',
+    profilesURL: process.env.PROFILE_API_URL || 'http://localhost:5000/',
+    contactsURL: process.env.CONTACT_API_URL || 'http://localhost:8000/contacts',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -11,7 +11,7 @@
     <Portfolio :enabled="false" />
     <Cta :enabled="false" />
     <Services :enabled="false" />
-    <Contact :enable-contact-form='false' />
+    <Contact />
     <BaseFooter />
     <BasePreloader />
   </div>
@@ -23,14 +23,12 @@ export default {
   data: () => ({
     linkedinProfile: {},
   }),
-  async mounted() {
-    const profile = await this.getLinkedinProfile()
-    console.log(profile)
-    this.linkedinProfile = profile
+  async created() {
+    this.linkedinProfile = await this.getLinkedinProfile()
   },
   methods: {
     async getLinkedinProfile() {
-      return await this.$axios.$get(process.env.apiUrl)
+      return await this.$axios.$get(process.env.profilesURL)
     },
   },
 }
