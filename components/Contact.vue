@@ -118,6 +118,7 @@ export default {
 
   methods: {
     async sendMail() {
+      this.$axios.setHeader('Access-Control-Allow-Origin', '*');
       await this.$axios.$post(process.env.contactsURL, this.form)
     },
   },
