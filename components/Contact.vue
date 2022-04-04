@@ -11,7 +11,7 @@
     <div class="row contact-form">
       <div class="col-twelve">
         <!-- form -->
-        <div>
+        <form>
           <fieldset>
             <div class="form-field">
               <input
@@ -45,12 +45,17 @@
               ></textarea>
             </div>
             <div class="form-field">
-              <button class="submitform" type="buttom" @click="sendMail()">
+              <v-btn
+                class="submitform btn-send-form"
+                type="button"
+                :loading="loading"
+                @click="sendMail()"
+              >
                 Enviar E-mail
-              </button>
+              </v-btn>
             </div>
           </fieldset>
-        </div>
+        </form>
         <div id="message-warning"></div>
         <div id="message-success">
           <i class="fa fa-check"></i>Your message was sent, thank you!<br />
@@ -96,6 +101,22 @@
         </p>
       </div>
     </div>
+    <v-row justify="center">
+      <v-dialog v-model="dialog" persistent min-width="320" max-width="420">
+        <v-card>
+          <v-card-title class="text-h4">
+            {{ dialogTitle }}
+          </v-card-title>
+          <v-card-text class="text-h6">{{ dialogText }}</v-card-text>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn color="success darken-3" style="font-size: 12px" large width="100%" @click="dialog = false">
+              Beleza!
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+    </v-row>
     <!-- /contact-info -->
   </section>
 </template>
@@ -109,6 +130,10 @@ export default {
   },
 
   data: () => ({
+    loading: false,
+    dialog: false,
+    dialogText: "",
+    dialogTitle: "",
     form: {
       name: '',
       email: '',
@@ -117,10 +142,40 @@ export default {
   }),
 
   methods: {
+    openDialog(title, text) {
+      this.dialog = true
+      this.dialogTitle = title
+      this.dialogText = text
+    },
     async sendMail() {
-      this.$axios.setHeader('Access-Control-Allow-Origin', '*');
-      await this.$axios.$post(process.env.contactsURL, this.form)
+      this.loading = true
+      this.$axios.setHeader('Access-Control-Allow-Origin', '*')
+      if (this.form.name === '' || this.form.email === '' || this.form.message === '') {
+        this.openDialog('Ops!', 'Por favor, preencha todos os campos.')
+        this.loading = false
+        return
+      }
+      try {
+        await this.$axios.$post(process.env.contactsURL, this.form)
+        this.openDialog('Mensagem enviada com sucesso!', 'Mensagem enviada com sucesso. Logo vou entrar em contato com você. Um abraço!')
+      } catch(e) {
+        this.openDialog('Erro ao enviar mensagem!', 'Não foi possível enviar e-mail! Mas calma, pode entrar em contato comigo pelo telefone ou whatsapp!')
+      }
+      this.loading = false
     },
   },
 }
 </script>
+<style scoped>
+.btn-send-form {
+  font-family: 'poppins-regular', sans-serif !important;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
+.title-contact {
+  font-family: 'poppins-regular', sans-serif !important;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+</style>

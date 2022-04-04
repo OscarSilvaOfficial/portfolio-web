@@ -101,7 +101,7 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/vuetify
-    // '@nuxtjs/vuetify',
+    '@nuxtjs/vuetify',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -141,7 +141,7 @@ export default {
   },
 
   env: {
-    profilesURL: process.env.PROFILE_API_URL || 'http://localhost:5000/',
+    profilesURL: process.env.PROFILE_API_URL || 'http://localhost:5000',
     contactsURL: process.env.CONTACT_API_URL || 'http://localhost:8000/contacts',
   },
 

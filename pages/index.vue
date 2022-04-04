@@ -1,5 +1,5 @@
 <template>
-  <div id="top">
+  <v-app id="top" data-app>
     <BaseHeader :enabled="false" />
     <Intro :headline="linkedinProfile.headline" />
     <About :summary="linkedinProfile.summary" />
@@ -14,7 +14,7 @@
     <Contact />
     <BaseFooter />
     <BasePreloader />
-  </div>
+  </v-app>
 </template>
 
 <script>
@@ -33,3 +33,16 @@ export default {
   },
 }
 </script>
+<style>
+html {
+  font-size: 10px !important;
+}
+
+.theme--dark.v-application {
+  color: unset !important;
+}
+
+.row {
+  margin: 0 auto !important;
+}
+</style>
