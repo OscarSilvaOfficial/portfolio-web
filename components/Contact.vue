@@ -18,7 +18,7 @@
                 v-model="form.name"
                 name="contactName"
                 type="text"
-                placeholder="Name"
+                placeholder="Seu nome"
                 value=""
                 minlength="2"
                 required=""
