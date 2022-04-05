@@ -41,7 +41,7 @@ export default {
       {
         hid: "og:url",
         property: "og:url",
-        content: window.location.origin
+        content: 'https://oscardasilva.vercel.app'
       },
       {
         hid: 'linkedin:card',
