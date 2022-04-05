@@ -10,7 +10,7 @@
     />
     <Portfolio :enabled="false" />
     <Cta :enabled="false" />
-    <Services :enabled="false" />
+    <Services />
     <Contact />
     <BaseFooter />
     <BasePreloader />

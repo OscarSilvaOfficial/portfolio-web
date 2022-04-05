@@ -4,13 +4,18 @@
 
     <div class="row section-intro">
       <div class="col-twelve">
-        <h5>Services</h5>
-        <h1>What Can I Do For You?</h1>
-
+        <h5>Serviços</h5>
+        <h1>O que eu posso oferecer a você?</h1>
         <p class="lead">
-          Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing
-          dolore officia nisi aliqua incididunt Ut veniam lorem ipsum
-          Consectetur ut in in eu do.
+          Eu atuo desde 2016 como desenvolvedor web, e desde então
+          venho atuando com diversos sistemas e aplicações web. Desde sistemas 
+          monoliticos até microserviços orientado a eventos.
+        </p>
+        <p class="lead">
+          Já criei sistemas totalmente do zero, refatorei e melhorei sistemas.
+          Então se você precisa de uma profissional capaz de desenvolver sistemas
+          facilemente escaláveis do ponto de vista de performace ou de criação de novas
+          funcionalidades, pode contar comigo. 
         </p>
       </div>
     </div>
