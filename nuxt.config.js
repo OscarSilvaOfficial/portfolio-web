@@ -1,6 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
 
-const image = 'https://images.wallpapersden.com/image/download/purple-sunrise-4k-vaporwave_bGplZmiUmZqaraWkpJRmbmdlrWZlbWU.jpg'
+const image = '/images/seo.jpg'
 const description = "Oscar da Silva | Portifólio de desenvolvimento de software"
 const title = 'Portifólio - Oscar da Silva'
 
@@ -11,7 +11,8 @@ export default {
     htmlAttrs: {
       lang: 'pt-BR',
     },
-    meta: [{
+    meta: [
+      {
         charset: 'utf-8'
       },
       {
@@ -28,6 +29,26 @@ export default {
         content: title
       },
       {
+        hid: 'og:description',
+        property: 'og:description',
+        content: description,
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: image
+      },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: window.location.origin
+      },
+      {
+        hid: 'linkedin:card',
+        name: 'linkedin:card',
+        content: 'summary_large_image',
+      },
+      {
         hid: 'description',
         name: 'description',
         content: description
@@ -37,16 +58,6 @@ export default {
         property: 'image',
         content: image
       },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content: description,
-      },
-      {
-        hid: "og:image",
-        property: "og:image",
-        content: image
-      }
     ],
     link: [{
         rel: 'icon',
@@ -114,11 +125,11 @@ export default {
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
-    retry: { 
+    retry: {
       retries: 100,
       retryDelay: () => 1000,
     }
-    
+
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
