@@ -44,11 +44,6 @@ export default {
         content: 'https://oscardasilva.vercel.app'
       },
       {
-        hid: 'linkedin:card',
-        name: 'linkedin:card',
-        content: 'summary_large_image',
-      },
-      {
         hid: 'description',
         name: 'description',
         content: description
