@@ -1,8 +1,8 @@
 import colors from 'vuetify/es5/util/colors'
 
 const image = '/images/seo.jpg'
-const description = "Oscar da Silva | Portifólio de desenvolvimento de software"
-const title = 'Portifólio | Oscar da Silva'
+const description = "Oscar da Silva | Portfólio de desenvolvimento de software"
+const title = 'Portfólio | Oscar da Silva'
 
 export default {
   head: {

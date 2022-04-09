@@ -3,7 +3,7 @@
     <div class="row section-intro">
       <div class="col-twelve">
         <h5>Carreira</h5>
-        <h1>Um pouca das minhas conquistas.</h1>
+        <h1>Um pouco das minhas conquistas.</h1>
       </div>
     </div>
     <!-- /section-intro-->
