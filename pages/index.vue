@@ -8,7 +8,7 @@
       :educations="linkedinProfile.educations"
       :certifications="linkedinProfile.certifications"
     />
-    <Portfolio :enabled="false" />
+    <Portfolio :enabled="true" />
     <Cta :enabled="false" />
     <Services />
     <Contact />
